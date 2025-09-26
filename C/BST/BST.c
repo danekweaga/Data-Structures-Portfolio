@@ -3,26 +3,31 @@
 #include <stdio.h>
 #include <string.h>
 
-bst* makeBST() {
+bst* makeBST() 
+{
     bst* tree = (bst*)malloc(sizeof(bst));
     tree->root = NULL;
     return tree;
 }
 
-void insert(char* data, bst* tree) {
-    insertTNode(data, &(tree->root));  // Pass address of root
+void insert(char* data, bst* tree) 
+{
+    insertTNode(data, &(tree->root));  
 }
 
-// RECURSIVE HELPER FUNCTIONS FOR PRINTING
-void printLNRHelper(tnode* node) {
+
+void printLNRHelper(tnode* node)
+ {
     if (node == NULL) return;
     printLNRHelper(node->left);
     printf("%s ", node->word);
     printLNRHelper(node->right);
 }
 
-void printLNR(bst* tree) {
-    if (tree->root == NULL) {
+void printLNR(bst* tree) 
+{
+    if (tree->root == NULL) 
+    {
         printf("Empty tree\n");
         return;
     }
@@ -31,15 +36,18 @@ void printLNR(bst* tree) {
     printf("\n");
 }
 
-void printNLRHelper(tnode* node) {
+void printNLRHelper(tnode* node) 
+{
     if (node == NULL) return;
     printf("%s ", node->word);
     printNLRHelper(node->left);
     printNLRHelper(node->right);
 }
 
-void printNLR(bst* tree) {
-    if (tree->root == NULL) {
+void printNLR(bst* tree) 
+{
+    if (tree->root == NULL) 
+    {
         printf("Empty tree\n");
         return;
     }
@@ -48,34 +56,40 @@ void printNLR(bst* tree) {
     printf("\n");
 }
 
-void printLRNHelper(tnode* node) {
+void printLRNHelper(tnode* node) 
+{
     if (node == NULL) return;
     printLRNHelper(node->left);
     printLRNHelper(node->right);
     printf("%s ", node->word);
 }
 
-void printLRN(bst* tree) {
-    if (tree->root == NULL) {
+void printLRN(bst* tree) 
+{
+    if (tree->root == NULL) 
+    {
         printf("Empty tree\n");
         return;
     }
+
     printf("LRN (Post-order): ");
     printLRNHelper(tree->root);
     printf("\n");
 }
 
-bool searchBST(char* data, bst* tree) {
+bool searchBST(char* data, bst* tree) 
+{
     return searchTNode(data, tree->root);
 }
 
-bool removeBST(char* data, bst* tree) {
+bool removeBST(char* data, bst* tree) 
+{
     if (tree->root == NULL) {
         printf("Empty tree\n");
         return false;
     }
     
-    // Check if the node exists before trying to delete
+    
     if (!searchBST(data, tree)) {
         printf("Word '%s' not found in tree\n", data);
         return false;
@@ -85,15 +99,17 @@ bool removeBST(char* data, bst* tree) {
     return true;
 }
 
-// Free the entire tree
-void freeBSTHelper(tnode* node) {
+
+void freeBSTHelper(tnode* node) 
+{
     if (node == NULL) return;
     freeBSTHelper(node->left);
     freeBSTHelper(node->right);
     freeTNode(node);
 }
 
-void freeBST(bst* tree) {
+void freeBST(bst* tree) 
+{
     freeBSTHelper(tree->root);
     free(tree);
 }
