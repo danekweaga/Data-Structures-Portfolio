@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Node
+comment0.text=\r\n\ Singly\ Linked\ Node\ Class\ for\ Question\ 1\ \r\n\ \r\n\ @title\ Node\ class\r\n\ @author\ Chukwunonso\ Ekweaga\r\n
+comment1.params=x
+comment1.target=Node(java.lang.Object)
+comment1.text=\r\n\ Constructot\ that\ creates\ a\ new\ node\ containing\ specified\ data\r\n\ \r\n\ @param\ data\ -\ The\ element\ to\ store\ in\ this\ node\r\n
+comment2.params=
+comment2.target=java.lang.Object\ getData()
+comment2.text=\r\n\ Method\ to\ get\ the\ data\ stored\ in\ the\ node\r\n\ \r\n\ @return\ data\ -\ the\ data\ stored\ in\ the\ node\r\n
+comment3.params=
+comment3.target=Node\ getNext()
+comment3.text=\r\n\ Method\ to\ get\ the\ next\ node\ in\ the\ list\r\n\ \r\n\ @return\ next\ -\ Reference\ to\ next\ node\ (or\ null)\r\n
+comment4.params=s
+comment4.target=void\ setNext(Node)
+comment4.text=\r\n\ Method\ to\ update\ the\ next\ node\ in\ the\ LinkedList\r\n\ \r\n\ @param\ s\ -\ the\ next\ node\ to\ be\ set\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Method\ to\ return\ a\ string\ representation\ of\ the\ node\r\n\ \r\n\ @return\ result\ -\ Data\ contents\ as\ string\r\n
+numComments=6

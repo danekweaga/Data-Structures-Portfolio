@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Bag
+comment0.text=\r\n\ Bag\ Class\ Consisting\ of\ a\ LinkedLists\ Question\ 3\ \r\n\ \r\n\ @title\ Bag\ Class\r\n\ @author\ Chukwunonso\ Ekweaga\r\n
+comment1.params=
+comment1.target=Bag()
+comment1.text=\r\n\ Constructor\r\n
+comment2.params=data
+comment2.target=void\ add(java.lang.Object)
+comment2.text=\r\n\ Method\ to\ add\ a\ node\ to\ a\ bag\r\n
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment3.text=\r\n\ Method\ that\ checks\ whether\ the\ bag\ is\ empty.\r\n\r\n\ @return\ -\ true\ if\ the\ bag\ has\ no\ nodes\ ,\ false\ otherwise.\r\n
+comment4.params=
+comment4.target=int\ size()
+comment4.text=\r\n\ Method\ that\ tracks\ the\ item\ count\ in\ the\ bag\r\n\r\n\ @return\ size\ -\ amount\ of\ items\ in\ the\ bag.\r\n
+comment5.params=
+comment5.target=void\ clear()
+comment5.text=\r\n\ Method\ that\ delets\ all\ items\ from\ bag\r\n
+comment6.params=
+comment6.target=java.util.Iterator\ iterator()
+numComments=7
