@@ -4,7 +4,7 @@ import java.util.Iterator;
  * Driver program for LinkedList class
  * @author Chukwunonso Ekweaga
  */
-public class LinkedListDriver
+public class main
  {
     public static void main(String[] args)
      {
