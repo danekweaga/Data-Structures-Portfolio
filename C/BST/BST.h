@@ -4,7 +4,8 @@
 #include "TNode.h"
 #include <stdbool.h>
 
-typedef struct BST {
+typedef struct BST 
+{
     tnode* root;
 } bst;
 
@@ -15,6 +16,6 @@ void printNLR(bst* tree);
 void printLRN(bst* tree);
 bool searchBST(char* data, bst* tree);
 bool removeBST(char* data, bst* tree);
-void freeBST(bst* tree);  // Added this function
+void freeBST(bst* tree);
 
 #endif
