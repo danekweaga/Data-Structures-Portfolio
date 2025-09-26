@@ -1,0 +1,62 @@
+import java.util.Iterator;
+
+/**
+ * Driver program for Bag class
+ * @author Chukwunonso Ekweaga
+ */
+public class BagDriver
+ {
+    public static void main(String[] args) 
+    {
+        System.out.println("=== BAG DRIVER PROGRAM ===");
+        Bag<String> bag = new Bag<>();
+        
+        // Test 1: Basic bag operations
+        System.out.println("\n1. Testing basic bag operations:");
+        System.out.println("Is bag empty? " + bag.isEmpty());
+        
+        bag.add("Apple");
+        bag.add("Banana");
+        bag.add("Cherry");
+        bag.add("Date");
+        
+        System.out.println("After adding 4 items:");
+        System.out.println("Bag size: " + bag.size());
+        System.out.println("Is bag empty? " + bag.isEmpty());
+        
+        // Test 2: Iterator functionality
+        System.out.println("\n2. Testing iterator:");
+        System.out.println("Bag contents using iterator:");
+        Iterator<String> iterator = bag.iterator();
+        int count = 1;
+        while (iterator.hasNext()) 
+        {
+            System.out.println("Item " + count + ": " + iterator.next());
+            count++;
+        }
+        
+        // Test 3: Clear bag
+        System.out.println("\n3. Testing clear:");
+        bag.clear();
+        System.out.println("After clear - Size: " + bag.size());
+        System.out.println("Is empty? " + bag.isEmpty());
+        
+        // Test 4: Adding different types (testing generics)
+        System.out.println("\n4. Testing with different data types:");
+        Bag<Integer> intBag = new Bag<>();
+        intBag.add(100);
+        intBag.add(200);
+        intBag.add(300);
+        
+        System.out.println("Integer bag contents:");
+        Iterator<Integer> intIterator = intBag.iterator();
+        while (intIterator.hasNext()) 
+        {
+            System.out.println("Number: " + intIterator.next());
+        }
+        
+        System.out.println("Integer bag size: " + intBag.size());
+        
+        System.out.println("\n=== BAG DRIVER COMPLETED ===");
+    }
+}
