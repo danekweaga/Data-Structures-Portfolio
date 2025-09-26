@@ -17,7 +17,7 @@ This repository contains implementations of fundamental data structures develope
 - **Queues** - Queue implementation with circular arrays and linked lists
 - **Node** - Basic node structure for linked data types
 - **TNode** - Tree node structure for hierarchical data
-- **Binary Search Tree (BST)** - *Currently in development*
+- **Binary Search Tree (BST)** - Hierarchical data structure with efficient O(log n) search and insertion operations
 
 ## 🚀 Getting Started
 
